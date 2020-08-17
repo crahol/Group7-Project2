@@ -1,7 +1,16 @@
+/* general */
 body {
 	background-color: #fefefe;
     margin: 0;
     padding: 0;
+}
+
+li {
+	list-style: none;
+}
+
+h1 {
+	font-family: arial;
 }
 
 /* Navbar */
@@ -84,6 +93,34 @@ nav li{
 	margin: auto;
 }
 
+/* homepage */
+.container .intro .left {
+	float: left;
+	padding-right: 20px;
+}
+
+.container .right-intro p {
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bolder;
+	font-style: italic;
+	font-size: 2rem;
+}
+
+.container .services {
+	clear: both;
+	padding-top: 20px;
+}
+
+.container .members li {
+	padding: 5px 0;
+}
+
+.container .members li a {
+	color: rgb(3, 50, 73);
+	text-decoration: none;
+	font-size: 1.1rem;
+}
+
 /* members pages */
 .container .profile {
     display: grid;
@@ -101,15 +138,20 @@ nav li{
 
 /* gallery page */
 .container .images {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    align-items: baseline;
-    justify-content: space-evenly;
+	display: grid;
+	grid-gap: 10px;
+	grid-template-columns: 1fr 1fr 1fr;
+	align-items: center;
+	justify-content: space-evenly;
 }
 
 .container .images img {
     width: 100%;
-    padding: 10px;
+	padding: 10px;
+}
+
+.container .images img:hover {
+	cursor: pointer;
 }
 
 /* portfolio pages */
@@ -117,9 +159,36 @@ nav li{
 	display: grid;
 	grid-template-columns: auto auto;
 	align-items: center;
-	justify-content: left;
+	justify-content: space-between;
 }
 
+.container .info .left img {
+	width: 200px;
+	height: 200px;
+}
+
+.container .info .right h2,
+.container .info .right p {
+	text-align: right;
+}
+
+.container .education ul li,
+.container .experience ul li,
+.container .other ul li,
+.container .projects ul li {
+	width: 100%;
+	border: 1px gray solid;
+	padding: 10px;
+	margin: 10px 0;
+}
+
+.container .projects a {
+	color: rgb(3, 50, 73);
+	text-decoration: none;
+	font-size: 1.1rem;
+}
+
+/* javascript ids */
 #red {
 	color: red;
 }
