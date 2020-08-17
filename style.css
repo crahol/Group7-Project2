@@ -1,0 +1,129 @@
+body {
+	background-color: #fefefe;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar */
+header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	background-color: rgb(3, 50, 73);
+	width: 100vw;
+	padding-top: 20px;	
+}
+
+.heading{
+	display: inline;
+	color: white;
+	padding: 20px;
+    font-size: 1.1rem;
+    text-decoration: none;
+}
+
+.heading:hover {
+	cursor: pointer;
+}
+
+nav button{
+	display: block;
+	padding: 1vw;
+    font-size: 3vh;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: black;
+    color: white;
+}
+
+nav a{
+	color: white;
+	display: block;
+}
+
+nav {
+	visibility: hidden;
+	width: 100vw;
+	height: 0;
+	margin: 0;
+	padding: 20px 0px;
+	vertical-align: baseline;
+	text-decoration: none;
+	list-style-type: none;
+	padding: 10px 0;
+	transition: visibility 0.5s linear, height 0.5s linear;
+}
+
+nav li {
+	padding: 10px 0 10px 75px;
+	list-style: none;
+}
+
+nav li a {
+	text-decoration: none;
+}
+
+nav #li-special {
+    color: white;
+}
+
+nav ul {
+	margin: 0;
+	padding: 0;
+}
+
+nav li{
+	margin:0;
+}
+
+/* Container */
+.container {
+	padding: 5% 0;
+	width: 80%;
+	margin: auto;
+}
+
+/* members pages */
+.container .profile {
+    display: grid;
+    grid-template-columns:  1fr 4fr;
+    padding: 10px;
+    margin: 10px 0;
+    width: 100%;
+    border: 1px gray solid;
+}
+
+.container .profile img {
+    width: 200px;
+    height: 200px;
+}
+
+/* gallery page */
+.container .images {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: baseline;
+    justify-content: space-evenly;
+}
+
+.container .images img {
+    width: 100%;
+    padding: 10px;
+}
+
+/* portfolio pages */
+.container .info {
+	display: grid;
+	grid-template-columns: auto auto;
+	align-items: center;
+	justify-content: left;
+}
+
+#red {
+	color: red;
+}
+
+#green {
+	color: green;
+}
