@@ -14,3 +14,29 @@ btn.addEventListener("click", function(e) {
      	nav_bar.style.height = "0";
     }    
 });
+
+var image = document.querySelector("img#hobby");
+
+var width = image.getAttribute('width');
+var height = image.getAttribute('height');
+
+let images = document.getElementById("images").getElementsByTagName("img");
+
+var counter = 1;
+
+Object.values(images).forEach(function(img) {
+    img.addEventListener("click", () =>  {
+        width = 2.223 * width;
+        height = 2.223 * height;
+        if(((counter)%4)==0){
+            width=100;
+            height=100;
+            img.setAttribute('width', width);
+            img.setAttribute('height', height);
+        } else {
+            img.setAttribute('width', width);
+            img.setAttribute('height', height);
+        }
+        counter++;
+    });
+});

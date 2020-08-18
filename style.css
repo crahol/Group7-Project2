@@ -138,16 +138,14 @@ nav li{
 
 /* gallery page */
 .container .images {
-	display: grid;
-	grid-gap: 10px;
-	grid-template-columns: 1fr 1fr 1fr;
-	align-items: center;
-	justify-content: space-evenly;
+	width: 100%;
+	margin: 20px auto 0 auto;
 }
 
 .container .images img {
-    width: 100%;
+    margin: auto;
 	padding: 10px;
+	overflow: hidden;
 }
 
 .container .images img:hover {
