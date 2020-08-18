@@ -40,3 +40,18 @@ Object.values(images).forEach(function(img) {
         counter++;
     });
 });
+
+let buttons = document.getElementById("images").getElementsByTagName("button");
+console.log(buttons);
+/*var btn1 = document.getElementById('TOP') */
+Object.values(buttons).forEach(function(button) {
+    button.addEventListener("click", () =>  {
+       var value = button.value-1;
+        console.log(value);
+       var temp = images[0].src;
+       images[0].src = images[value].src;
+       images[value].src = temp;
+       
+        });
+    
+});
